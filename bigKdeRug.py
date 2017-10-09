@@ -19,13 +19,16 @@ cmap = sb.cubehelix_palette(
                             rot=.05,
                             reverse=True
                             )
-sb.kdeplot(new_frame['TRB'], 
-           new_frame['PTS'], 
-           ax=ax,
-           shade=True,
-           cmap=cmap,
-           n_levels=60
-                           )
+sb.kdeplot(
+        new_frame['TRB'], 
+        new_frame['PTS'], 
+        ax=ax,
+        shade=True,
+        cmap=cmap,
+        n_levels=60,
+        annot_kws=dict(stat="r")
+        )
+
 sb.rugplot(new_frame['TRB'], color="gray", ax=ax)
 sb.rugplot(new_frame['PTS'],color='#763e8e', vertical=True, ax=ax)
 plt.suptitle("Points by Boards",
@@ -34,5 +37,9 @@ plt.suptitle("Points by Boards",
              y=0.85,
              x=0.5,
              )
+plt.text(12.0, 4.0, 
+         "Sample Size = {} seasons".format(len(new_frame)),
+         color="white",
+         fontsize=12)
 
 f.savefig("graphs/big_kde_rug_graph.png")

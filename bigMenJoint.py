@@ -29,5 +29,18 @@ big_jointplot = sb.jointplot(
 plt.rcParams['axes.titlepad'] = 10
 plt.rcParams["axes.labelpad"] = 10  
 plt.suptitle("Points and Aging",fontsize=28,y=1.03,x=.24,rotation=30)
+plt.text(36.0, 
+         37, 
+         "Sample Size = {}".format(len(new_frame)),
+         fontsize=14
+         )
+plt.text(12.0, 
+         .1, 
+         """
+         * Shaq, Karl Malone, Sir Charles, Tim Duncan, Kareem,
+            Kevin Garnett         
+         """,
+         fontsize=10
+         )
 
 big_jointplot.savefig(r"graphs/big_jointplot.png")

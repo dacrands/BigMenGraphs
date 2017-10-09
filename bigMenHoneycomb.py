@@ -38,4 +38,9 @@ plt.suptitle("Points as a function of Age",
 plt.xlabel('Age',fontweight='bold')
 plt.ylabel('Points',fontweight='bold')
 
+plt.text(22.0, 
+         5.0, 
+         "Sample Size = {}".format(len(new_frame)),
+         )
+
 big_honeycomb_graph.savefig(r"graphs/big_honeycomb_graph.png")
