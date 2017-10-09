@@ -12,3 +12,6 @@ favorite NBA big men.
 * Tim Duncan
 * Kevin Garnett
 * Kareem Abdul-Jabbar
+* Charles Barkley
+* Hakeem Olajuwon
+* Karl Malone
