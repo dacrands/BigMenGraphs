@@ -1,5 +1,6 @@
 # Big Men Graphs
 Uses data from basketball-reference.com player pages [such as this](https://www.basketball-reference.com/players/b/barklch01.html)
+to create a myriad of graphs. I visualized the data in all sorts of ways, and I the think graphs tell an interesting story.
 
 ## Background
 Basketball is my favorite sport, both to play and watch. In particular, I've always been a fan of the
