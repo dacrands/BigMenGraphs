@@ -9,11 +9,9 @@ import matplotlib as mpl
 mpl.rcParams['patch.force_edgecolor'] = True
 import matplotlib.pyplot as plt
 
-from bigMenData import new_frame
+from basketball_ref_data import main_frame
 
-"""
-Graphs
-"""
+
 plt.rcParams['axes.facecolor'] = '#212223'
 plt.rcParams['axes.titlepad'] = 25
 plt.rcParams["axes.labelpad"] = 10
@@ -44,34 +42,11 @@ sb.set(font_scale = 1.6)
 
 sb.despine(left=True, bottom=True)
 
-ax = big_line
-ax.add_legend(title="legend", 
-              labels=["Shaquille O'Neal",
-                      "Tim Duncan",
-                      "Kevin Garnett",
-                      "Kareem Abdul-Jabbar",
-                      "Hakeem Olajuwon",
-                      "Charles Barkley",
-                      "Karl Malone"
-                      ]
-              )
-#ax.legend(
-#          bbox_to_anchor=(.9, .98), 
-#          ncol=1,
-#          fontsize=14,
-#          frameon=True,
-#          shadow=True,
-#          labels=["Shaquille O'Neal",
-#                  "Tim Duncan",
-#                  "Kevin Garnett",
-#                  "Kareem Abdul-Jabbar",
-#                  "Hakeem Olajuwon",
-#                  "Charles Barkley",
-#                  "Karl Malone"
-#                  ]
-#          )
 
-#frame = legend.get_frame()
+player_names = ["Shaquille O'Neal", "Tim Duncan", "Kevin Garnett", 
+                "Kareem Abdul-Jabbar", "Hakeem Olajuwon", 
+                "Charles Barkley", "Karl Malone"]
+ax = big_line
 
 sb.set_style("darkgrid")
 plt.show()
