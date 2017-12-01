@@ -51,4 +51,4 @@ ax = big_line
 sb.set_style("darkgrid")
 plt.show()
 
-big_line.savefig("graphs/big_line_graph.png")
+big_line.savefig("graphs/big_subline_graph.png")
